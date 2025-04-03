@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #c8d4ec;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-load {
+            animation: fadeIn 1s ease-out;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+        }
+
+        figure {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        figure img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            padding-left: 20px;
+        }
+
+        section {
+            width: 60%;
+            height: 100%;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        section h1 {
+            text-align: center;
+            font-family: "Trebuchet MS", sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #455c72;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: box-shadow 0.4s ease;
+        }
+
+        button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        footer {
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(26, 46, 70);
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="animate-on-load">
+        <figure>
+            <img src="imagens/img 12.png" alt="Imagem ilustrativa">
+        </figure>
+        <section>
+            <h1>O que é filosofia?</h1>
+            <p>
+                A filosofia é uma área do conhecimento que se dedica a estudar questões fundamentais sobre a existência, a verdade, a
+                moralidade e a realidade. Ela surgiu na Grécia Antiga, no século VI a.C. A palavra filosofia vem do grego e significa
+                "amor à sabedoria". Os filósofos são pensadores e estudiosos que refletem sobre o sentido das coisas e apresentam
+                diferentes visões da realidade.
+            </p>
+            <p>
+                O estudo da filosofia é a análise racional de questões fundamentais sobre a existência, a verdade e a moralidade. A
+                filosofia é uma forma de pensamento que se baseia na reflexão crítica e no raciocínio lógico.
+            </p>
+            <a href="pag1.html"><button>Conheça alguns Filósofos</button></a>
+        </section>
+    </main>
+    <footer>
+        <p>Programado por REBECA </p>
+    </footer>
+</body>
+
+</html>
